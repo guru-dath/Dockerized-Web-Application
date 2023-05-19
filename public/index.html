@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Camel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      line-height: 150%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #e9e9e9;
+    }
+
+    .header h1 {
+      color: #222222;
+      font-size: 30px;
+      font-family: "Pacifico", cursive;
+    }
+
+    .header .social a {
+      padding: 0 5px;
+      color: #222222;
+    }
+
+    .left {
+      float: left;
+      width: 180px;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .content {
+      margin-left: 190px;
+      border-left: 1px solid #d4d4d4;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #29292a;
+      color: white;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(1) {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    tr td i.fas {
+      display: block;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .footer {
+      padding: 55px 20px;
+      background-color: #2e3550;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Mr. Camel</h1>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </header>
+    <aside class="left">
+      <img src="./assets/html/mr-camel.jpg" width="160px" />
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <br><br>
+      <p>"Lets Learn and grow in devops."<br>- Mr DevOps</p>
+    </aside>
+    <main class="content">
+      <h2>Project Title: Dockerized Web Application</h2>
+      <p>Developed and Dockerized a web application using Node.js and Express.js. The application provides a simple REST API to manage user data. It utilizes MongoDB as the database for storing user information. The application is containerized using Docker to ensure consistency and portability across different environments.</p>
+      <h2>Key Contributions:</h2>
+      <p>Created a Dockerfile to define the application's Docker image, including the installation of Node.js, copying the application code, and setting up the necessary dependencies.
+Configured a docker-compose.yml file to define the services needed for the application, including the web server and MongoDB database.
+Implemented Docker volumes to persist the MongoDB data across container restarts.
+Orchestrated the deployment and management of the application using Docker Compose commands, ensuring a seamless development and deployment workflow.</p>
+      <hr><br>
+      <h2>How Can I Help You?</h2>
+      <table>
+        <tr>
+          <th>SKILL 1</th>
+          <th>SKILL 2</th>
+          <th>SKILL 3</th>
+          <th>SKILL 4</th>
+          <th>SKILL 5</th>
+        </tr>
+        <tr>
+          <td><i class="fas fa-archive"></i></td>
+          <td><i class="fas fa-archive"></i></td>
+          <td><i class="fas fa-archive"></i></td>
+          <td><i class="fas fa-trailer"></i></td>
+          <td><i class="fas fa-trailer"></i></td>
+        </tr>
+        <tr>
+          <td>Docker: Containerization platform used to package the application and its dependencies into isolated containers.</td>
+          <td>Node.js: JavaScript runtime used for server-side development.</td>
+          <td>Express.js: Web application framework used to build the REST API.</td>
+          <td>MongoDB: Document-oriented NoSQL database used to store user data.</td>
+          <td>Docker Compose: Tool used to define and manage multi-container Docker applications.</td>
+        </tr>
+        <tr>
+      </table>
+      <form>
+        <label>Email: <input type="text" name="email"></label><br>
+        <label> Mobile: <input type="text" name="mobile"> </label><br>
+        <label>Message: <textarea name="message" rows="5" cols="30"></textarea></label><br>
+        <input type="submit" value="Submit" /><br>
+      <closeform></closeform></form>
+    </main>
+    <footer class="footer">© Copyright Mr. Gurudath</footer>
+  </div>
+</body>
+
+</html>
